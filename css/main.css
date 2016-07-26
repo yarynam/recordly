@@ -70,12 +70,7 @@ h4,
 	color: #2a2a2a;
 }
 
-h1,
-.h1,
-h2,
-.h2 {
 
-}
 
 h1,
 .h1 {
@@ -95,6 +90,7 @@ h2,
 	font-size: 44px;
 	font-size: 2rem;
 	letter-spacing: 0;
+	/*margin-left: 1em;*/
 	line-height: 1;
 }
 
@@ -188,6 +184,21 @@ nav ul {
 		list-style-position: inside;
 	}
 
+}
+
+.call {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	cursor: pointer;
+	z-index: 10000;
+}
+.call span {
+	/*background-color: #0DC194;*/
+	padding: 10px 13px;
+	border: solid 2px #ffffff;
+	cursor: pointer;
 }
 
 img {
@@ -492,17 +503,22 @@ input.text:focus {
 	line-height: 1;
 	font-size: 14px;
 	letter-spacing: -0.035em;
-	background: #fff;
-	color: #2a2a2a;
+	padding: 10px 13px;
+	border: solid 2px #ffffff;
+	color: #ffffff;
 	cursor: pointer;
-	padding: 17px 20px;
 	position: relative;
 	z-index: 2;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	border-radius: 0px;
 }
 
 .btn:hover {
-	color: #2D2D7F;
+	color: #0DC194;
+}
+
+.btn:focus {
+	color: #ffffff;
 }
 
 @media ( min-width: 768px ) {
@@ -1037,7 +1053,7 @@ input.text:focus {
 }
 
 .hero-home h1 {
-	margin-top: 2.727rem;
+	margin-top: 1.727rem;
 }
 
 .hero-home .brand {
@@ -1196,10 +1212,10 @@ input.text:focus {
 		display: block;
 	}
 
-	.ueno-no-video .fullscreen-video,
+	/*.ueno-no-video .fullscreen-video,
 	.ueno-no-video .hero-overlay {
 		display: none;
-	}
+	}*/
 
 }
 
@@ -1285,7 +1301,7 @@ input.text:focus {
 
 }
 
-.hero-overlay {
+/*.hero-overlay {
 	display: none;
 	position: absolute;
 	top: 0;
@@ -1294,7 +1310,7 @@ input.text:focus {
 	right: 0;
 	background: rgba(0,0,0,0.15);
 	z-index: 1;
-}
+}*/
 
 .btn-close {
 	position: absolute;
@@ -1936,6 +1952,7 @@ label {
 
 	.hero-ads .heading {
 		min-width: 190px;
+
 	}
 
 	.hero-ads .subheading {
@@ -1968,18 +1985,13 @@ label {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	width: 80px;
-	height: 80px;
 	line-height: 78px;
-	border: 1px solid #e5e5e5;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: 40% auto;
 	margin: 20px 0 15px;
 	font-style: normal;
-	color: #1b1b1b;
-	text-align: center;
-	overflow: hidden;
+
 }
 
 .icon-no-border {
@@ -1998,7 +2010,6 @@ label {
 	left: 0;
 	right: 0;
 	margin: auto;
-	max-width: 85%;
 }
 
 .icon-no-border img,
@@ -2377,8 +2388,15 @@ a.underline:hover {
 .mb-5 {
 	margin-bottom: 5px;
 }
+@media ( min-width: 468px ) {
+	mb-10 {
+		padding-top: 5em;
+	}
 
+
+}
 .mb-10 {
+	padding-left: 25px;
 	margin-bottom: 10px;
 	margin-bottom: .455rem;
 }
@@ -2389,6 +2407,7 @@ a.underline:hover {
 }
 
 .mb-20 {
+	padding-left: 25px;
 	margin-bottom: 20px;
 	margin-bottom: .909rem;
 }
